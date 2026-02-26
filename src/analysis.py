@@ -11,7 +11,7 @@ cursor = conn.cursor()
 cursor.execute("SELECT SUM(amount) FROM grocery_logs")
 total = cursor.fetchone()[0]
 
-print("Total Monthly Grocery Spending", round(total, 2), "£")
+print("Total Monthly Grocery Spending", round(total, 2),"£")
 
 # ============================
 # 2. SPENDING BY GROCERY STORE
@@ -27,7 +27,7 @@ store_results = cursor.fetchall()
 
 print("\nGrocery Spending by Grocery Stores:")
 for row in store_results:
-    print (row[0], "-", round(row[1], 2), "£")
+    print (row[0], "-", round(row[1], 2),"£")
 
 # ===============================
 # 4. MONTHLY TREND
@@ -43,7 +43,7 @@ monthly_results = cursor.fetchall()
 
 print("\nMonthly spending:")
 for row in monthly_results:
-    print(row[0], "-", round(row[1], 2), "£")
+    print(row[0], "-", round(row[1], 2),"£")
 
 # ===============================
 # 5. VISUALISATION (BAR CHART)
@@ -56,7 +56,7 @@ plt.bar(stores, amounts)
 plt.xticks(rotation=45)
 plt.title("Spending by Store")
 plt.xlabel("Store")
-plt.ylabel("Amount (£)")
+plt.ylabel("Amount(£)")
 plt.tight_layout()
 
 plt.show()
