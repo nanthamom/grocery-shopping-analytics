@@ -53,10 +53,12 @@ stores = [row[0] for row in store_results]
 amounts = [row[1] for row in store_results]
 
 plt.bar(stores, amounts)
-plt.xticks(rotation=45)
+
 plt.title("Spending by Store")
 plt.xlabel("Store")
 plt.ylabel("Amount(£)")
+
+plt.xticks(rotation=45)
 plt.tight_layout()
 
 plt.show()

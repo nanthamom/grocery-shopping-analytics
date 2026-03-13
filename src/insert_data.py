@@ -80,8 +80,68 @@ data = [
     ("2025-12-26", "Lidl", 13.34, "Grocery"),
     ("2025-12-29", "Sainsbury’s", 4.94, "Grocery"),
 
-]
+# ============================
+# January 2026 Spending Data
+# ============================
 
+    # WEEK ONE
+    ("2026-01-01", "Lidl", 9.58, "Grocery"),
+
+    ("2026-01-02", "Aldi", 4.15, "Grocery"),
+    ("2026-01-02", "Tesco", 3.85, "Grocery"),
+    ("2026-01-02", "Lidl", 4.85, "Grocery"),
+
+    ("2026-01-05", "Lidl", 13.11, "Grocery"),
+
+    ("2026-01-07", "Tesco", 4.90, "Grocery"),
+    ("2026-01-07", "Lidl", 3.83, "Grocery"),
+
+    ("2026-01-09", "Oseyo", 2.99, "Grocery"),
+    ("2026-01-09", "Waitrose", 3.55, "Grocery"),
+    ("2026-01-09", "Tesco", 3.85, "Grocery"),
+
+    ("2026-01-10", "Aldi", 10.79, "Grocery"),
+
+    # WEEK TWO
+    ("2026-01-12", "Sainsbury’s", 5.15, "Grocery"),
+    ("2026-01-12", "M&S", 4.80, "Grocery"),
+    ("2026-01-12", "Lidl", 7.29, "Grocery"),
+
+    ("2026-01-14", "Lidl", 11.49, "Grocery"),
+
+    ("2026-01-15", "Tesco", 7.25, "Grocery"),
+    ("2026-01-15", "Lidl", 0.35, "Grocery"),
+
+    # WEEK THREE
+    ("2026-01-19", "Lidl", 11.82, "Grocery"),
+
+    ("2026-01-21", "Lidl", 12.64, "Grocery"),
+
+    ("2026-01-23", "Greggs", 3.35, "Eating Out"),
+    ("2026-01-23", "Sainsbury’s", 3.95, "Grocery"),
+
+    ("2026-01-24", "M&S", 1.65, "Grocery"),
+    ("2026-01-24", "Lidl", 6.77, "Grocery"),
+
+    # WEEK FOUR
+    ("2026-01-26", "M&S", 3.55, "Grocery"),
+    ("2026-01-26", "Sainsbury’s", 3.95, "Grocery"),
+
+    ("2026-01-27", "ITSU", 6.99, "Eating Out"),
+    ("2026-01-27", "Tesco", 5.75, "Grocery"),
+    ("2026-01-27", "Lidl", 5.15, "Grocery"),
+
+    ("2026-01-29", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-01-29", "Lidl", 4.33, "Grocery"),
+
+    ("2026-01-30", "McDonald’s", 4.58, "Eating Out"),
+    ("2026-01-30", "M&S", 1.60, "Grocery"),
+
+    ("2026-01-31", "Oseyo", 3.38, "Grocery"),
+    ("2026-01-31", "Tesco", 5.05, "Grocery"),
+    ("2026-01-31", "M&S", 4.95, "Grocery")
+
+]
 
 # Insert all Rows into the Database
 cursor.executemany ("""
@@ -95,3 +155,4 @@ conn.close()
 
 print("November 2025 Groceries Data Inserted Successfully")
 print("December 2025 Groceries Data Inserted Successfully")
+print("January 2026 Groceries Data Inserted Successfully")
