@@ -6,15 +6,15 @@ conn = sqlite3.connect("data/groceries.db")
 cursor = conn.cursor()
 
 # ================================
-# 1. TOTAL MONTLY GROCERY SPENDING
+# 1. TOTAL MONTHLY GROCERY SPENDING
 # ================================
 cursor.execute("SELECT SUM(amount) FROM grocery_logs")
 total = cursor.fetchone()[0]
 
-print("Total Monthly Grocery Spending", round(total, 2),"£")
+print("Total Grocery Spending:", round(total, 2), "£")
 
 # ============================
-# 2. SPENDING BY GROCERY STORE
+# 2. SPENDING BY STORE
 # ============================
 cursor.execute("""
 SELECT store, SUM(amount)
@@ -25,12 +25,12 @@ ORDER BY SUM(amount) DESC
 
 store_results = cursor.fetchall()
 
-print("\nGrocery Spending by Grocery Stores:")
+print("\nSpending by Store:")
 for row in store_results:
-    print (row[0], "-", round(row[1], 2),"£")
+    print(row[0], "-", round(row[1], 2), "£")
 
 # ===============================
-# 4. MONTHLY TREND
+# 3. MONTHLY TREND
 # ===============================
 cursor.execute("""
 SELECT strftime('%Y-%m', date), SUM(amount)
@@ -43,25 +43,28 @@ monthly_results = cursor.fetchall()
 
 print("\nMonthly spending:")
 for row in monthly_results:
-    print(row[0], "-", round(row[1], 2),"£")
+    print(row[0], "-", round(row[1], 2), "£")
 
 # ===============================
-# 5. VISUALISATION (BAR CHART)
+# 4. VISUALISATION (CLEAN VERSION)
 # ===============================
 
-stores = [row[0] for row in store_results]
-amounts = [row[1] for row in store_results]
+# Only show top 10 stores
+top_n = 10
+top_results = store_results[:top_n]
 
-plt.bar(stores, amounts)
+stores = [row[0] for row in top_results]
+amounts = [row[1] for row in top_results]
 
-plt.title("Spending by Store")
-plt.xlabel("Store")
-plt.ylabel("Amount(£)")
+plt.figure()
+plt.barh(stores, amounts)
 
-plt.xticks(rotation=45)
+plt.title("Top 10 Stores by Spending")
+plt.xlabel("Amount (£)")
+plt.ylabel("Store")
+
 plt.tight_layout()
-
 plt.show()
 
-# close connection
+# Close connection
 conn.close()

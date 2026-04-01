@@ -65,3 +65,43 @@ Monthly spending:
 2025-11 - 143.03 £
 2025-12 - 150.01 £
 2026-01 - 195.19 £
+
+# CURRENT OUTPUT (BY 1st Apr 2026)
+
+November 2025 Groceries Data Inserted Successfully
+December 2025 Groceries Data Inserted Successfully
+January 2026 Groceries Data Inserted Successfully
+February 2026 Groceries Data Inserted Successfully
+Total Grocery Spending: 870.37 £
+
+Spending by Store:
+Lidl - 308.18 £
+Sainsbury’s - 86.97 £
+M&S - 81.23 £
+Tesco - 54.0 £
+Royal China - 47.54 £
+Aldi - 44.72 £
+ITSU - 38.47 £
+Potpot Malatang - 26.7 £
+Paradox Museum - 24.7 £
+Daphne’s - 22.7 £
+McDonald’s - 20.25 £
+Oseyo - 19.6 £
+EE Mobile - 18.48 £
+Boots - 17.39 £
+Waitrose - 12.25 £
+TfL - 10.5 £
+Seoul Plaza - 6.26 £
+Meet Fresh - 5.55 £
+HEYTEA - 5.3 £
+Whole Foods - 4.78 £
+City Oat Latte - 4.05 £
+Lindt - 4.0 £
+Pret - 3.4 £
+Greggs - 3.35 £
+
+Monthly spending:
+2025-11 - 143.03 £
+2025-12 - 150.01 £
+2026-01 - 195.19 £
+2026-02 - 382.14 £
