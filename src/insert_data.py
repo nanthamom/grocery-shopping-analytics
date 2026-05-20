@@ -227,7 +227,187 @@ data = [
 
     ("2026-02-28", "ITSU", 6.99, "Eating Out"),
     ("2026-02-28", "M&S", 1.60, "Grocery"),
-    ("2026-02-28", "Lidl", 6.17, "Grocery")
+    ("2026-02-28", "Lidl", 6.17, "Grocery"),
+
+# ============================
+# March 2026 Spending Data
+# ============================
+
+    # WEEK 1
+    ("2026-03-02", "M&S", 1.60, "Grocery"),
+    ("2026-03-02", "Tesco", 3.85, "Grocery"),
+
+    ("2026-03-03", "TfL", 6.10, "Transport"),
+    ("2026-03-03", "Bath Bus U2", 5.20, "Transport"),
+    ("2026-03-03", "Starbucks", 4.50, "Eating Out"),   # estimate if unknown
+    ("2026-03-03", "Roman Bath Ticket", 25.00, "Entertainment"),
+    ("2026-03-03", "Bath Lunch", 17.50, "Eating Out"), # estimate if unknown
+    ("2026-03-03", "Sally Lunn Bun", 6.50, "Eating Out"),
+    ("2026-03-03", "Prior Park Ticket", 12.00, "Entertainment"),
+    ("2026-03-03", "M&S", 1.90, "Grocery"),
+
+    ("2026-03-04", "Lidl", 5.42, "Grocery"),
+
+    ("2026-03-05", "M&S", 5.20, "Grocery"),
+    ("2026-03-05", "Sainsbury’s", 8.60, "Grocery"),
+
+    ("2026-03-07", "Sainsbury’s", 6.49, "Grocery"),
+    ("2026-03-07", "M&S", 3.20, "Grocery"),
+
+    # WEEK 2
+    ("2026-03-09", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-03-09", "Lidl", 9.58, "Grocery"),
+
+    ("2026-03-11", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-03-11", "Lidl", 3.28, "Grocery"),
+
+    ("2026-03-12", "City Coffee", 3.45, "Eating Out"),
+    ("2026-03-12", "Sainsbury’s", 3.95, "Grocery"),
+
+    ("2026-03-13", "Tesco", 3.85, "Grocery"),
+    ("2026-03-13", "Waitrose", 4.75, "Grocery"),
+
+    ("2026-03-14", "TfL", 5.25, "Transport"),
+    ("2026-03-14", "LEON", 3.95, "Eating Out"),
+    ("2026-03-14", "Ma Eum", 27.27, "Eating Out"),
+    ("2026-03-14", "IKEA", 4.75, "Shopping"),
+    ("2026-03-14", "Arabica", 5.25, "Eating Out"),
+    ("2026-03-14", "Marugame Udon", 11.95, "Eating Out"),
+    ("2026-03-14", "Aldi", 3.21, "Grocery"),
+
+    # WEEK 3
+    ("2026-03-16", "Sainsbury’s", 6.65, "Grocery"),
+    ("2026-03-16", "Lidl", 7.79, "Grocery"),
+
+    ("2026-03-18", "Tesco", 7.70, "Grocery"),
+    ("2026-03-18", "Boots", 2.80, "Health"),
+
+    ("2026-03-19", "Tesco", 3.85, "Grocery"),
+    ("2026-03-19", "Tesco", 2.50, "Grocery"),
+    ("2026-03-19", "Sainsbury’s", 5.65, "Grocery"),
+    ("2026-03-19", "Oseyo", 5.19, "Grocery"),
+
+    ("2026-03-20", "M&S", 1.60, "Grocery"),
+    ("2026-03-20", "Sainsbury’s", 3.95, "Grocery"),
+
+    ("2026-03-21", "Boots", 10.65, "Health"),
+    ("2026-03-21", "Uniqlo", 29.90, "Shopping"),
+    ("2026-03-21", "Primark", 6.00, "Shopping"),
+    ("2026-03-21", "TfL", 1.75, "Transport"),
+
+    ("2026-03-21", "M&S", 1.60, "Grocery"),
+    ("2026-03-21", "M&S", 3.80, "Grocery"),
+    ("2026-03-21", "Aldi", 2.83, "Grocery"),
+
+    # WEEK 4
+    ("2026-03-23", "M&S", 3.95, "Grocery"),
+    ("2026-03-23", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-03-23", "Sainsbury’s", 4.85, "Grocery"),
+    ("2026-03-23", "Lidl", 16.95, "Grocery"),
+
+    ("2026-03-26", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-03-26", "Sainsbury’s", 1.65, "Grocery"),
+    ("2026-03-26", "Lidl", 5.26, "Grocery"),
+
+    ("2026-03-27", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-03-27", "Aldi", 1.15, "Grocery"),
+    ("2026-03-27", "M&S", 3.20, "Grocery"),
+
+    ("2026-03-28", "Lidl", 20.84, "Grocery"),
+
+    ("2026-03-30", "M&S", 1.60, "Grocery"),
+    ("2026-03-30", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-03-30", "Sainsbury’s", 1.80, "Grocery"),
+
+    ("2026-03-31", "M&S", 1.60, "Grocery"),
+    ("2026-03-31", "Tesco", 7.80, "Grocery"),
+
+# ============================
+# April 2026 Spending Data
+# ============================
+
+    # WEEK 1
+    ("2026-04-02", "City Cafe", 3.45, "Eating Out"),
+    ("2026-04-02", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-04-02", "Tesco", 2.50, "Grocery"),
+
+    ("2026-04-03", "Lidl", 16.28, "Grocery"),
+
+    ("2026-04-04", "M&S", 3.45, "Grocery"),
+    ("2026-04-04", "TfL", 1.75, "Transport"),
+    ("2026-04-04", "Seoul Plaza", 1.69, "Grocery"),
+    ("2026-04-04", "Tesco", 3.85, "Grocery"),
+    ("2026-04-04", "Primark", 8.00, "Shopping"),
+
+    # WEEK 2
+    ("2026-04-06", "M&S", 1.60, "Grocery"),
+    ("2026-04-06", "McDonald’s", 2.49, "Eating Out"),
+    ("2026-04-06", "Lidl", 0.99, "Grocery"),
+
+    ("2026-04-07", "Sainsbury’s", 9.05, "Grocery"),
+    ("2026-04-07", "M&S", 9.75, "Grocery"),
+
+    ("2026-04-08", "Sainsbury’s", 3.95, "Grocery"),
+
+    ("2026-04-09", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-04-09", "Aldi", 3.33, "Grocery"),
+    ("2026-04-09", "M&S", 2.65, "Grocery"),
+
+    ("2026-04-10", "City Oat Latte", 4.05, "Eating Out"),
+    ("2026-04-10", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-04-10", "Lidl", 13.24, "Grocery"),
+
+    ("2026-04-11", "M&S", 1.60, "Grocery"),
+    ("2026-04-11", "ITSU", 9.25, "Eating Out"),
+
+    # WEEK 3
+    ("2026-04-13", "Lidl", 9.97, "Grocery"),
+
+    ("2026-04-14", "City Coffee", 3.45, "Eating Out"),
+    ("2026-04-14", "Tesco", 3.85, "Grocery"),
+
+    ("2026-04-15", "M&S", 10.55, "Grocery"),
+    ("2026-04-15", "Aldi", 2.89, "Grocery"),
+
+    ("2026-04-16", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-04-16", "M&S", 8.00, "Grocery"),
+
+    ("2026-04-17", "Tesco", 3.85, "Grocery"),
+    ("2026-04-17", "Lidl", 3.04, "Grocery"),
+
+    ("2026-04-18", "Lidl", 16.71, "Grocery"),
+
+    # WEEK 4
+    ("2026-04-20", "ITSU", 9.25, "Eating Out"),
+    ("2026-04-20", "Sainsbury’s", 7.10, "Grocery"),
+
+    ("2026-04-21", "Lidl", 12.39, "Grocery"),
+
+    ("2026-04-23", "ITSU", 9.25, "Eating Out"),
+    ("2026-04-23", "Aldi", 5.72, "Grocery"),
+    ("2026-04-23", "M&S", 2.94, "Grocery"),
+
+    ("2026-04-24", "TfL", 1.75, "Transport"),
+    ("2026-04-24", "LEON", 11.84, "Eating Out"),
+    ("2026-04-24", "Boots", 14.63, "Health"),
+    ("2026-04-24", "Arabica", 5.60, "Eating Out"),
+    ("2026-04-24", "Seoul Plaza", 3.48, "Grocery"),
+    ("2026-04-24", "M&S", 3.20, "Grocery"),
+    ("2026-04-24", "H&M", 12.99, "Shopping"),
+    ("2026-04-24", "Primark", 14.00, "Shopping"),
+
+    ("2026-04-25", "Lidl", 13.20, "Grocery"),
+
+    # WEEK 5
+    ("2026-04-27", "Tesco", 3.85, "Grocery"),
+
+    ("2026-04-28", "Lidl", 6.74, "Grocery"),
+
+    ("2026-04-29", "Lidl", 5.39, "Grocery"),
+
+    ("2026-04-30", "Aldi", 1.98, "Grocery"),
+    ("2026-04-30", "M&S", 5.60, "Grocery"),
+    ("2026-04-30", "Tesco", 3.85, "Grocery")
 
 ]
 
@@ -245,3 +425,5 @@ print("November 2025 Groceries Data Inserted Successfully")
 print("December 2025 Groceries Data Inserted Successfully")
 print("January 2026 Groceries Data Inserted Successfully")
 print("February 2026 Groceries Data Inserted Successfully")
+print("March 2026 Groceries Data Inserted Successfully")
+print("April 2026 Groceries Data Inserted Successfully")

@@ -1,70 +1,46 @@
 import sqlite3
+import pandas as pd
 import matplotlib.pyplot as plt
 
-# Connect Database 
 conn = sqlite3.connect("data/groceries.db")
-cursor = conn.cursor()
 
-# ================================
-# 1. TOTAL MONTHLY GROCERY SPENDING
-# ================================
-cursor.execute("SELECT SUM(amount) FROM grocery_logs")
-total = cursor.fetchone()[0]
-
-print("Total Grocery Spending:", round(total, 2), "£")
-
-# ============================
-# 2. SPENDING BY STORE
-# ============================
-cursor.execute("""
-SELECT store, SUM(amount)
+# Grocery
+grocery_df = pd.read_sql("""
+SELECT store, SUM(amount) as total
 FROM grocery_logs
+WHERE category='Grocery'
 GROUP BY store
-ORDER BY SUM(amount) DESC
-""")
+ORDER BY total DESC
+""", conn)
 
-store_results = cursor.fetchall()
-
-print("\nSpending by Store:")
-for row in store_results:
-    print(row[0], "-", round(row[1], 2), "£")
-
-# ===============================
-# 3. MONTHLY TREND
-# ===============================
-cursor.execute("""
-SELECT strftime('%Y-%m', date), SUM(amount)
+# Others
+other_df = pd.read_sql("""
+SELECT store, SUM(amount) as total
 FROM grocery_logs
-GROUP BY strftime('%Y-%m', date)
-ORDER BY strftime('%Y-%m', date)
-""")
+WHERE category!='Grocery'
+GROUP BY store
+ORDER BY total DESC
+""", conn)
 
-monthly_results = cursor.fetchall()
+fig, axes = plt.subplots(1, 2, figsize=(14,6))
 
-print("\nMonthly spending:")
-for row in monthly_results:
-    print(row[0], "-", round(row[1], 2), "£")
+# LEFT = groceries
+axes[0].barh(grocery_df["store"],
+             grocery_df["total"])
 
-# ===============================
-# 4. VISUALISATION (CLEAN VERSION)
-# ===============================
+axes[0].set_title("Grocery Stores Spending")
+axes[0].set_xlabel("Amount (£)")
+axes[0].invert_yaxis()
 
-# Only show top 10 stores
-top_n = 10
-top_results = store_results[:top_n]
+# RIGHT = others
+axes[1].barh(other_df["store"],
+             other_df["total"])
 
-stores = [row[0] for row in top_results]
-amounts = [row[1] for row in top_results]
-
-plt.figure()
-plt.barh(stores, amounts)
-
-plt.title("Top 10 Stores by Spending")
-plt.xlabel("Amount (£)")
-plt.ylabel("Store")
+axes[1].set_title("Other Spending")
+axes[1].set_xlabel("Amount (£)")
+axes[1].invert_yaxis()
 
 plt.tight_layout()
 plt.show()
 
-# Close connection
 conn.close()

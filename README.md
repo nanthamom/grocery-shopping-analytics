@@ -66,42 +66,85 @@ Monthly spending:
 2025-12 - 150.01 £
 2026-01 - 195.19 £
 
-# CURRENT OUTPUT (BY 1st Apr 2026)
+# CURRENT OUTPUT (Updated: 3:53AM - Wednesday, 20th May 2026)
 
-November 2025 Groceries Data Inserted Successfully
-December 2025 Groceries Data Inserted Successfully
-January 2026 Groceries Data Inserted Successfully
-February 2026 Groceries Data Inserted Successfully
-Total Grocery Spending: 870.37 £
+```bash
+November 2025 Spending Data Inserted Successfully
+December 2025 Spending Data Inserted Successfully
+January 2026 Spending Data Inserted Successfully
+February 2026 Spending Data Inserted Successfully
+March 2026 Spending Data Inserted Successfully
+April 2026 Spending Data Inserted Successfully
+```
 
-Spending by Store:
-Lidl - 308.18 £
-Sainsbury’s - 86.97 £
-M&S - 81.23 £
-Tesco - 54.0 £
-Royal China - 47.54 £
-Aldi - 44.72 £
-ITSU - 38.47 £
-Potpot Malatang - 26.7 £
-Paradox Museum - 24.7 £
-Daphne’s - 22.7 £
-McDonald’s - 20.25 £
-Oseyo - 19.6 £
-EE Mobile - 18.48 £
-Boots - 17.39 £
-Waitrose - 12.25 £
-TfL - 10.5 £
-Seoul Plaza - 6.26 £
-Meet Fresh - 5.55 £
-HEYTEA - 5.3 £
-Whole Foods - 4.78 £
-City Oat Latte - 4.05 £
-Lindt - 4.0 £
-Pret - 3.4 £
-Greggs - 3.35 £
+## Total Spending = £1608.26 
+
+## Spending by Store
+
+| Store | Total (£) |
+|------|------:|
+| Lidl | 475.25 |
+| Sainsbury’s | 190.16 |
+| M&S | 159.82 |
+| Tesco | 105.30 |
+| ITSU | 66.22 |
+| Aldi | 65.83 |
+| Royal China | 47.54 |
+| Boots | 45.47 |
+| Uniqlo | 29.90 |
+| Primark | 28.00 |
+| Ma Eum | 27.27 |
+| TfL | 27.10 |
+| Potpot Malatang | 26.70 |
+| Roman Bath Ticket | 25.00 |
+| Oseyo | 24.79 |
+| Paradox Museum | 24.70 |
+| McDonald’s | 22.74 |
+| Daphne’s | 22.70 |
+| EE Mobile | 18.48 |
+
+## Monthly Spending Trend
+
+| Month | Spending (£) |
+|------|------:|
+| 2025-11 | 143.03 |
+| 2025-12 | 150.01 |
+| 2026-01 | 195.19 |
+| 2026-02 | 382.14 |
+| 2026-03 | 402.11 |
+| 2026-04 | 335.78 |
+
+---
+
+## Example SQL Queries Used
+
+Total spending:
+
+```sql
+SELECT SUM(amount)
+FROM grocery_logs;
+```
 
 Monthly spending:
-2025-11 - 143.03 £
-2025-12 - 150.01 £
-2026-01 - 195.19 £
-2026-02 - 382.14 £
+
+```sql
+SELECT strftime('%Y-%m', date),
+       SUM(amount)
+FROM grocery_logs
+GROUP BY strftime('%Y-%m', date);
+```
+
+Highest spending stores:
+
+```sql
+SELECT store,
+       SUM(amount)
+FROM grocery_logs
+GROUP BY store
+ORDER BY SUM(amount) DESC;
+```
+### Future Improvements
+- [ ] Add spending visualisations (Matplotlib)
+- [ ] Build Streamlit dashboard
+- [ ] Predict monthly spending using Python
+- [ ] Categorise expenses automatically
