@@ -4,6 +4,20 @@
 
 - This Project Transform My Weekly Google Docs Spending Recordings into a Structured Database and Visual Insights.
 
+## Why I Built This
+
+Instead of using a public dataset, I wanted to analyse my own spending habits as a university student living in London.
+
+The project helped me practice:
+
+- SQL querying
+- Database design
+- Data cleaning
+- Data visualisation
+- Python programming
+
+while generating insights from real-world personal finance data.
+
 # Project Overview 
 
 As a University Student in London, I Tracked My Grocery and Food Spending Over Multiple Months.
@@ -18,7 +32,7 @@ This Project Turns Raw Data Into:
 - SQLite Database Storing all Transactions
 - Categorised Spending (Grocery, Bills, Eating Out)
 - Store-Based Analysis (Lidl, Tesco, M&S, etc.)
-- Monthly SPending Tracking
+- Monthly Spending Tracking
 - Bar Chart Visualisation Using Matplotlib
 
 # Technologies Used
@@ -66,7 +80,7 @@ Monthly spending:
 2025-12 - 150.01 £
 2026-01 - 195.19 £
 
-# CURRENT OUTPUT (Updated: 3:53AM - Wednesday, 20th May 2026)
+# CURRENT OUTPUT (Updated: 3:30PM - Tuesday, 2nd June 2026)
 
 ```bash
 November 2025 Spending Data Inserted Successfully
@@ -75,33 +89,27 @@ January 2026 Spending Data Inserted Successfully
 February 2026 Spending Data Inserted Successfully
 March 2026 Spending Data Inserted Successfully
 April 2026 Spending Data Inserted Successfully
+May 2026 Spending Data Inserted Successfully
 ```
 
-## Total Spending = £1608.26 
+## Total Spending = £2227.67
 
 ## Spending by Store
 
+## Top 10 Spending Locations
+
 | Store | Total (£) |
 |------|------:|
-| Lidl | 475.25 |
-| Sainsbury’s | 190.16 |
-| M&S | 159.82 |
-| Tesco | 105.30 |
-| ITSU | 66.22 |
-| Aldi | 65.83 |
+| Lidl | 595.36 |
+| Sainsbury's | 234.01 |
+| M&S | 190.27 |
+| Tesco | 115.90 |
+| ITSU | 84.72 |
+| TfL | 79.85 |
+| Aldi | 75.83 |
+| Boots | 61.40 |
+| Barang | 52.88 |
 | Royal China | 47.54 |
-| Boots | 45.47 |
-| Uniqlo | 29.90 |
-| Primark | 28.00 |
-| Ma Eum | 27.27 |
-| TfL | 27.10 |
-| Potpot Malatang | 26.70 |
-| Roman Bath Ticket | 25.00 |
-| Oseyo | 24.79 |
-| Paradox Museum | 24.70 |
-| McDonald’s | 22.74 |
-| Daphne’s | 22.70 |
-| EE Mobile | 18.48 |
 
 ## Monthly Spending Trend
 
@@ -113,6 +121,7 @@ April 2026 Spending Data Inserted Successfully
 | 2026-02 | 382.14 |
 | 2026-03 | 402.11 |
 | 2026-04 | 335.78 |
+| 2026-05 | 619.41 |
 
 ---
 
@@ -144,7 +153,7 @@ GROUP BY store
 ORDER BY SUM(amount) DESC;
 ```
 ### Future Improvements
-- [ ] Add spending visualisations (Matplotlib)
+- [x] Add spending visualisations (Matplotlib)
 - [ ] Build Streamlit dashboard
 - [ ] Predict monthly spending using Python
 - [ ] Categorise expenses automatically
