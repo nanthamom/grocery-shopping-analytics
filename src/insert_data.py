@@ -504,7 +504,90 @@ data = [
 
     ("2026-05-31", "Sainsbury’s", 3.95, "Grocery"),
     ("2026-05-31", "M&S", 4.80, "Grocery"),
-    ("2026-05-31", "McDonald’s", 5.58, "Eating Out")
+    ("2026-05-31", "McDonald’s", 5.58, "Eating Out"),
+
+# ============================
+# June 2026 Spending Data
+# ============================
+
+    # WEEK 1
+    ("2026-06-01", "TfL", 3.50, "Transport"),
+    ("2026-06-01", "Cafe Kitsune", 7.50, "Eating Out"),
+    ("2026-06-01", "McDonald’s", 5.08, "Eating Out"),
+    ("2026-06-01", "Boots", 2.95, "Health"),
+    ("2026-06-01", "Primark", 8.00, "Shopping"),
+
+    ("2026-06-02", "ITSU", 9.25, "Eating Out"),
+    ("2026-06-02", "Tesco", 3.85, "Grocery"),
+
+    ("2026-06-03", "Lidl", 13.97, "Grocery"),
+
+    ("2026-06-05", "LEON", 4.00, "Eating Out"),
+    ("2026-06-05", "Tesco", 3.85, "Grocery"),
+
+    ("2026-06-06", "Lidl", 12.35, "Grocery"),
+
+    ("2026-06-07", "TfL", 1.75, "Transport"),
+    ("2026-06-07", "Jollibee", 9.48, "Eating Out"),
+    ("2026-06-07", "Starbucks", 5.00, "Eating Out"),
+    ("2026-06-07", "M&S", 4.65, "Grocery"),
+
+    # WEEK 2
+    ("2026-06-08", "Lidl", 8.89, "Grocery"),
+
+    ("2026-06-09", "Tesco", 3.85, "Grocery"),
+    ("2026-06-09", "ITSU", 8.99, "Eating Out"),
+
+    ("2026-06-10", "M&S", 10.40, "Grocery"),
+
+    ("2026-06-11", "Lidl", 13.83, "Grocery"),
+
+    ("2026-06-12", "McDonald’s", 5.99, "Eating Out"),
+    ("2026-06-12", "M&S", 9.00, "Grocery"),
+
+    ("2026-06-13", "Tesco", 3.85, "Grocery"),
+    ("2026-06-13", "ITSU", 8.99, "Eating Out"),
+
+    ("2026-06-14", "TfL", 3.50, "Transport"),
+    ("2026-06-14", "Cay Tre", 21.55, "Eating Out"),
+    ("2026-06-14", "Starbucks", 6.15, "Eating Out"),
+    ("2026-06-14", "Tesco", 4.40, "Grocery"),
+    ("2026-06-14", "Boots", 2.00, "Health"),
+
+    # WEEK 3
+    ("2026-06-15", "Lidl", 12.93, "Grocery"),
+
+    ("2026-06-16", "Sainsbury’s", 3.95, "Grocery"),
+    ("2026-06-16", "ITSU", 9.25, "Eating Out"),
+    ("2026-06-16", "Starbucks", 6.00, "Eating Out"),
+
+    ("2026-06-17", "Sainsbury’s", 4.85, "Grocery"),
+    ("2026-06-17", "Sainsbury’s", 1.95, "Grocery"),
+    ("2026-06-17", "Sainsbury’s", 2.25, "Grocery"),
+    ("2026-06-17", "Boots", 6.90, "Health"),
+    ("2026-06-17", "M&S", 10.85, "Grocery"),
+    ("2026-06-17", "Lidl", 3.76, "Grocery"),
+
+    ("2026-06-18", "Lidl", 16.00, "Grocery"),
+
+    ("2026-06-19", "TfL", 3.50, "Transport"),
+    ("2026-06-19", "M&S", 40.45, "Grocery"),
+    ("2026-06-19", "Whittard", 27.80, "Shopping"),
+    ("2026-06-19", "Seoul Plaza", 8.46, "Grocery"),
+    ("2026-06-19", "Boots", 1.80, "Health"),
+    ("2026-06-19", "Sainsbury’s", 1.65, "Grocery"),
+    ("2026-06-19", "LEON", 11.49, "Eating Out"),
+
+    ("2026-06-20", "TfL", 3.50, "Transport"),
+    ("2026-06-20", "JOE & JUICE", 17.30, "Eating Out"),
+    ("2026-06-20", "Fortnum & Mason", 14.20, "Shopping"),
+    ("2026-06-20", "Boots", 7.75, "Health"),
+    ("2026-06-20", "London Gift", 8.97, "Shopping"),
+    ("2026-06-20", "M&S", 11.35, "Grocery"),
+    ("2026-06-20", "Starbucks", 6.15, "Eating Out"),
+    ("2026-06-20", "Aldi", 3.17, "Grocery"),
+
+    ("2026-06-21", "Lidl", 16.04, "Grocery")
 
 ]
 
@@ -525,3 +608,4 @@ print("February 2026 Groceries Data Inserted Successfully")
 print("March 2026 Groceries Data Inserted Successfully")
 print("April 2026 Groceries Data Inserted Successfully")
 print("May 2026 Groceries Data Inserted Successfully")
+print("June 2026 Groceries Data Inserted Successfully")
