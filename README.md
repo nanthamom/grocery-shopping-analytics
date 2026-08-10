@@ -90,6 +90,7 @@ February 2026 Spending Data Inserted Successfully
 March 2026 Spending Data Inserted Successfully
 April 2026 Spending Data Inserted Successfully
 May 2026 Spending Data Inserted Successfully
+June 2026 Spending Data Inserted Successfully
 ```
 
 ## Total Spending = £2227.67
@@ -122,6 +123,7 @@ May 2026 Spending Data Inserted Successfully
 | 2026-03 | 402.11 |
 | 2026-04 | 335.78 |
 | 2026-05 | 619.41 |
+| 2026-06 | 619.41 |
 
 ---
 
@@ -154,6 +156,6 @@ ORDER BY SUM(amount) DESC;
 ```
 ### Future Improvements
 - [x] Add spending visualisations (Matplotlib)
-- [ ] Build Streamlit dashboard
+- [x] Build Streamlit dashboard
 - [ ] Predict monthly spending using Python
 - [ ] Categorise expenses automatically

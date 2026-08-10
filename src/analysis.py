@@ -44,3 +44,5 @@ plt.tight_layout()
 plt.show()
 
 conn.close()
+
+print("Total Monthly Grocery Spending", round(total, 2), "£")
