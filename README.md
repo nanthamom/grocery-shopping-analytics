@@ -44,6 +44,9 @@ This Project Turns Raw Data Into:
 
 # How To Run 
 
+# 0. Delete the SQLite database & Rebuild Python Data
+rm data/groceries.db
+
 # 1. Create Database
 python3 src/create_db.py
 
@@ -53,34 +56,7 @@ python3 src/insert_data.py
 # 3. Run Analysis
 python3 src/analysis.py
 
-# CURRENT OUTPUT (BY 13th Mar 2026)
-
-Database Created Successfully
-November 2025 Groceries Data Inserted Successfully
-December 2025 Groceries Data Inserted Successfully
-January 2026 Groceries Data Inserted Successfully
-Total Monthly Grocery Spending 488.23 £
-
-Grocery Spending by Grocery Stores:
-Lidl - 234.34 £
-M&S - 56.38 £
-Sainsbury’s - 49.72 £
-Aldi - 41.4 £
-Tesco - 34.5 £
-EE Mobile - 18.48 £
-McDonald’s - 17.76 £
-Oseyo - 15.43 £
-ITSU - 6.99 £
-Waitrose - 5.1 £
-Whole Foods - 4.78 £
-Greggs - 3.35 £
-
-Monthly spending:
-2025-11 - 143.03 £
-2025-12 - 150.01 £
-2026-01 - 195.19 £
-
-# CURRENT OUTPUT (Updated: 3:30PM - Tuesday, 2nd June 2026)
+# CURRENT OUTPUT (Updated: 9:30AM - Tuesday, 11th August 2026)
 
 ```bash
 November 2025 Spending Data Inserted Successfully
@@ -93,11 +69,11 @@ May 2026 Spending Data Inserted Successfully
 June 2026 Spending Data Inserted Successfully
 ```
 
-## Total Spending = £2227.67
+## Total Spending = £2696.62
 
 ## Spending by Store
 
-## Top 10 Spending Locations
+## Top 5 Spending Locations
 
 | Store | Total (£) |
 |------|------:|
@@ -106,11 +82,6 @@ June 2026 Spending Data Inserted Successfully
 | M&S | 190.27 |
 | Tesco | 115.90 |
 | ITSU | 84.72 |
-| TfL | 79.85 |
-| Aldi | 75.83 |
-| Boots | 61.40 |
-| Barang | 52.88 |
-| Royal China | 47.54 |
 
 ## Monthly Spending Trend
 
@@ -122,8 +93,8 @@ June 2026 Spending Data Inserted Successfully
 | 2026-02 | 382.14 |
 | 2026-03 | 402.11 |
 | 2026-04 | 335.78 |
-| 2026-05 | 619.41 |
-| 2026-06 | 619.41 |
+| 2026-05 | 619.52 |
+| 2026-06 | 468.84 |
 
 ---
 
@@ -157,5 +128,7 @@ ORDER BY SUM(amount) DESC;
 ### Future Improvements
 - [x] Add spending visualisations (Matplotlib)
 - [x] Build Streamlit dashboard
+- [x] Add interactive filters
+- [x] Add Grocery vs Other Spending analysis
 - [ ] Predict monthly spending using Python
 - [ ] Categorise expenses automatically
