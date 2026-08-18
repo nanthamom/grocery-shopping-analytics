@@ -13,13 +13,14 @@ GROUP BY store
 ORDER BY total DESC
 """, conn)
 
-# Others
+# Others - Top 10
 other_df = pd.read_sql("""
 SELECT store, SUM(amount) as total
 FROM grocery_logs
 WHERE category!='Grocery'
 GROUP BY store
 ORDER BY total DESC
+LIMIT 10
 """, conn)
 
 fig, axes = plt.subplots(1, 2, figsize=(14,6))
@@ -36,13 +37,18 @@ axes[0].invert_yaxis()
 axes[1].barh(other_df["store"],
              other_df["total"])
 
-axes[1].set_title("Other Spending")
+axes[1].set_title("Top 10 Other Spending")
 axes[1].set_xlabel("Amount (£)")
 axes[1].invert_yaxis()
 
 plt.tight_layout()
 plt.show()
 
+total = grocery_df["total"].sum()
+
 conn.close()
 
-print("Total Monthly Grocery Spending", round(total, 2), "£")
+print("Total Grocery Spending:", round(total, 2), "£")
+
+conn.close()
+

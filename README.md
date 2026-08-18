@@ -56,6 +56,9 @@ python3 src/insert_data.py
 # 3. Run Analysis
 python3 src/analysis.py
 
+# 4. Run Streamlit
+streamlit run app.py
+
 # CURRENT OUTPUT (Updated: 9:30AM - Tuesday, 11th August 2026)
 
 ```bash
